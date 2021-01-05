@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 
 const server = app.listen(process.env.PORT || 3001);
 const io = socketio(server);
-io.set('transports', ['websocket']);
 
 const Game = require('./models/Game');
 const QuotableApi = require('./api');
