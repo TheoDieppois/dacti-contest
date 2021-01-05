@@ -3,14 +3,14 @@ const app = express();
 const socketio = require('socket.io');
 const mongoose = require('mongoose');
 
-const server = app.listen(3001);
+const server = app.listen(process.env.PORT || 3001);
 const io = socketio(server);
 
 const Game = require('./models/Game');
 const QuotableApi = require('./api');
 
 mongoose.connect(
-  'mongodb+srv://<USER>:<PASSWORD>@cluster0.bfuc4.mongodb.net/<BDD>?retryWrites=true&w=majority',
+  'mongodb+srv://admin:admin@cluster0.bfuc4.mongodb.net/wordGame?retryWrites=true&w=majority',
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log('Sucessfully connected to the DB')
 );
