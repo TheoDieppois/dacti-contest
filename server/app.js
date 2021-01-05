@@ -10,7 +10,7 @@ const Game = require('./models/Game');
 const QuotableApi = require('./api');
 
 mongoose.connect(
-  'mongodb+srv://admin:admin@cluster0.bfuc4.mongodb.net/wordGame?retryWrites=true&w=majority',
+  'mongodb+srv://<USER>:<PASSWORD>@cluster0.bfuc4.mongodb.net/<BDD>?retryWrites=true&w=majority',
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log('Sucessfully connected to the DB')
 );
