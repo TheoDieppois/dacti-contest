@@ -10,13 +10,16 @@ const calculatePercentage = (player, wordsLength) => {
 const ProgressBar = ({ players, player, wordsLength }) => {
   const percentage = calculatePercentage(player, wordsLength);
   return (
-    <div>
+    <div className='progressBar'>
+      <p>Participants : </p>
       {
         <>
           <h5 className='text-left'>{player.nickName}</h5>
           <div className='progress my-1' key={player._id}>
             <div
-              className='progress-bar'
+              className={`progress-bar ${
+                percentage === 100 ? 'bg-success' : ''
+              }`}
               role='progressbar'
               style={{ width: percentage }}
             >

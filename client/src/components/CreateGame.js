@@ -14,12 +14,15 @@ const CreateGame = () => {
   };
 
   return (
-    <div className='row'>
+    <div className='row section'>
       <div className='col-sm'></div>
       <div className='col-sm-8'>
-        <h1 className='text-center'>Créer une partie</h1>
-        <form onSubmit={onSubmitHandler}>
-          <div className='form-group'>
+        <h1 className='text-center mb-5'>Créer une partie</h1>
+        <form
+          onSubmit={onSubmitHandler}
+          className='d-flex flex-column justify-content-center align-items-center'
+        >
+          <div className='form-group w-75'>
             <label htmlFor='nickName'>Pseudo:</label>
             <input
               type='text'
@@ -27,7 +30,7 @@ const CreateGame = () => {
               value={nickName}
               onChange={onChangeHandler}
               placeholder='Votre pseudo'
-              className='form-control'
+              className='form-control mb-4'
             />
           </div>
           <button type='submit' className='btn btn-primary'>

@@ -27,7 +27,7 @@ const Form = ({ isOpen, isOver, gameID }) => {
   };
 
   return (
-    <div className='row my-3'>
+    <div className='row my-3 w-100'>
       <div className='col-sm'></div>
       <div className='col-sm-4'>
         <form>

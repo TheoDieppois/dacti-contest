@@ -20,7 +20,7 @@ const TypeRacer = ({ gameState }) => {
   }
 
   return (
-    <div className='text-center'>
+    <div className='text-center section flex-column'>
       <DisplayWords words={words} player={player} />
       <ProgressBar
         players={players}

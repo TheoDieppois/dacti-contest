@@ -26,11 +26,11 @@ const getWordsToBeTyped = (words, player) => {
 
 const DisplayWords = ({ words, player }) => {
   return (
-    <>
+    <div className='w-75 mb-5 pb-5'>
       {getTypedWords(words, player)}
       {getCurrentWord(words, player)}
       {getWordsToBeTyped(words, player)}
-    </>
+    </div>
   );
 };
 

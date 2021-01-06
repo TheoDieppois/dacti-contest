@@ -1,0 +1,45 @@
+body {
+  background: #272727;
+}
+
+.section {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #fff !important;
+  color: #272727;
+  border-color: #fff;
+}
+
+.btn-primary:hover {
+  color: #272727;
+  border-color: #fff;
+}
+
+.btn-outline-primary {
+  border-color: #fff !important;
+  color: #fff;
+}
+
+.btn-outline-primary:hover {
+  background: #fff !important;
+  color: #272727;
+}
+
+.progressBar {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 250px;
+}
+
+table,
+th,
+td {
+  color: #fff;
+}

@@ -6,6 +6,7 @@ import CreateGame from './components/CreateGame';
 import JoinGame from './components/JoinGame';
 import TypeRacer from './components/TypeRacer';
 import socket from './socketConfig';
+import './App.css';
 
 function App() {
   const [gameState, setGameState] = useState({
